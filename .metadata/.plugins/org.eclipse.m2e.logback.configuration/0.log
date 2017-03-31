@@ -1,0 +1,19 @@
+2017-03-31 20:26:03,188 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.matrix:Prisme:0.0.1-SNAPSHOT @ /Users/jianminlin/Documents/pp/Prisme/pom.xml.
+2017-03-31 20:26:03,188 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.matrix:Prisme:0.0.1-SNAPSHOT @ /Users/jianminlin/Documents/pp/Prisme/pom.xml.
+2017-03-31 20:26:07,052 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-31 20:26:07,064 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 31 resources
+2017-03-31 20:26:07,080 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-31 20:26:07,081 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jianminlin/Documents/pp/Prisme/src/test/resources
+2017-03-31 20:26:09,055 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.matrix:Prisme:0.0.1-SNAPSHOT @ /Users/jianminlin/Documents/pp/Prisme/pom.xml.
+2017-03-31 20:27:29,524 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-31 20:27:29,528 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-31 20:27:29,531 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-31 20:27:29,531 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jianminlin/Documents/pp/Prisme/src/test/resources
+2017-03-31 20:29:20,278 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-31 20:29:20,280 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-31 20:29:20,283 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-31 20:29:20,285 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jianminlin/Documents/pp/Prisme/src/test/resources
+2017-03-31 20:58:46,214 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-31 20:58:46,243 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 31 resources
+2017-03-31 20:58:46,258 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-31 20:58:46,259 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jianminlin/Documents/pp/Prisme/src/test/resources

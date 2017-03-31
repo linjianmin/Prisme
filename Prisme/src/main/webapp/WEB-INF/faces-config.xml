@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=" http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<managed-bean>
+		<managed-bean-name>jpaResourceBean</managed-bean-name>
+		<managed-bean-class>entityManagerFactory.JPAResourceBean</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>plansTriService</managed-bean-name>
+		<managed-bean-class>services.PlansTriImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+		<managed-property>
+			<property-name>jpaResourceBean</property-name>
+			<property-class>entityManagerFactory.JPAResourceBean</property-class>
+			<value>#{jpaResourceBean}</value>
+		</managed-property>
+	</managed-bean>
+	    
+		<managed-bean>
+		<managed-bean-name>colisService</managed-bean-name>
+		<managed-bean-class>services.ColisImpl</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+		<managed-property>
+			<property-name>jpaResourceBean</property-name>
+			<property-class>entityManagerFactory.JPAResourceBean</property-class>
+			<value>#{jpaResourceBean}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>colisManagedBean</managed-bean-name>
+		<managed-bean-class>managedBeans.ColisManagedBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>colisService</property-name>
+			<property-class>services.ColisService</property-class>
+			<value>#{colisService}</value>
+		</managed-property>
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>plansTriManagedBean</managed-bean-name>
+		<managed-bean-class>managedBeans.PlansTriManagedBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>plansTriService</property-name>
+			<property-class>services.PlansTriService</property-class>
+			<value>#{plansTriService}</value>
+		</managed-property>
+	</managed-bean>
+
+	<navigation-rule>
+		<display-name>add</display-name>
+		<from-view-id>/add.xhtml</from-view-id>
+			<navigation-case>
+				<from-outcome>plantri</from-outcome>
+				<to-view-id>/plantri.xhtml</to-view-id>
+				<redirect />
+			</navigation-case>
+	</navigation-rule>
+	
+<!-- 	<navigation-rule>		 -->
+<!-- 		<from-view-id>/plantri.xhtml</from-view-id> -->
+<!-- 			<navigation-case> -->
+<!-- 				<from-outcome>edit</from-outcome> -->
+<!-- 				<to-view-id>/edit.xhtml</to-view-id> -->
+<!-- 				<redirect /> -->
+<!-- 			</navigation-case> -->
+<!-- 	</navigation-rule> -->
+	
+		<navigation-rule>		
+		<from-view-id>/plantri.xhtml</from-view-id>
+			<navigation-case>
+				<from-outcome>detailsPlan</from-outcome>
+				<to-view-id>/detailsPlan.xhtml</to-view-id>
+				<redirect />
+			</navigation-case>
+	</navigation-rule>
+	
+		<navigation-rule>		
+		<from-view-id>/editDetail.xhtml</from-view-id>
+			<navigation-case>
+				<from-outcome>detailsPlan</from-outcome>
+				<to-view-id>/detailsPlan.xhtml</to-view-id>
+				<redirect />
+			</navigation-case>
+	</navigation-rule>
+	
+		<navigation-rule>		
+		<from-view-id>/detailsPlan.xhtml</from-view-id>
+			<navigation-case>
+				<from-outcome>plantri</from-outcome>
+				<to-view-id>/plantri.xhtml</to-view-id>
+				<redirect />
+			</navigation-case>
+	</navigation-rule>
+	
+		<navigation-rule>
+			<from-view-id>/edit.xhtml</from-view-id>
+			<navigation-case>
+				<from-outcome>plantri</from-outcome>
+				<to-view-id>/plantri.xhtml</to-view-id>
+				<redirect />
+			</navigation-case>
+	</navigation-rule>
+	
+
+	
+
+<validator>
+</validator>	<validator>
+			<display-name>com.matrix.nomValidator</display-name>
+			<validator-id>com.matrix.nomValidator</validator-id>
+			<validator-class>validators.NomValidator</validator-class>
+			<attribute>
+				<attribute-name>plansTriService</attribute-name>
+				<attribute-class>services.PlansTriService</attribute-class>
+			</attribute>
+		</validator>
+
+
+
+<!-- <managed-bean> -->
+<!--    <managed-bean-name>helloWorld</managed-bean-name> -->
+<!--    <managed-bean-class>com.jsf.test.HelloWorld</managed-bean-class> -->
+<!--    <managed-bean-scope>request</managed-bean-scope> -->
+<!-- </managed-bean>  -->
+
+<!-- 		   <navigation-rule> -->
+<!--       <from-view-id>home.xhtml</from-view-id> -->
+<!--       <navigation-case> -->
+<!--          <from-action>#{navigationController.processPage1}</from-action> -->
+<!--          <from-outcome>page</from-outcome> -->
+<!--          <to-view-id>page1.jsf</to-view-id> -->
+<!--       </navigation-case> -->
+<!--       <navigation-case> -->
+<!--          <from-action>#{navigationController.processPage2}</from-action> -->
+<!--          <from-outcome>page</from-outcome> -->
+<!--          <to-view-id>page2.jsf</to-view-id> -->
+<!--       </navigation-case> -->
+<!--    </navigation-rule> -->
+
+
+</faces-config>

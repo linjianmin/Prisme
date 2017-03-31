@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14896740072630" configfile="/Prisme/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="plantri.xhtml" x="338" y="562" id="pf14900899108095" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" outlinks="pf14901821659690" inlinks="pf149009173792211 pf14901924563842 pf14902667433756" path="/plantri.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="edit.xhtml" x="122" y="562" id="pf14900917121499" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf149009173792211" path="/edit.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="detailsPlan.xhtml" x="554" y="562" id="pf14901821659691" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf14902667433756" inlinks="pf14901821659690 pf14906097383078" path="/detailsPlan.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="add" id="pf14901924563853" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14901924563842" path="/add.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="editDetail.xhtml" id="pf14906095972597" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf14906097383078" path="/editDetail.xhtml"/>
+  <links id="pf149009173792211" target="pf14900899108095" source="pf14900917121499" outcome="plantri" redirect="true"/>
+  <links id="pf14901821659690" target="pf14901821659691" source="pf14900899108095" outcome="detailsPlan" redirect="true"/>
+  <links id="pf14901924563842" target="pf14900899108095" source="pf14901924563853" outcome="plantri" redirect="true"/>
+  <links id="pf14902667433756" target="pf14900899108095" source="pf14901821659691" outcome="plantri" redirect="true"/>
+  <links id="pf14906097383078" target="pf14901821659691" source="pf14906095972597" outcome="detailsPlan" redirect="true"/>
+</pageflow:Pageflow>

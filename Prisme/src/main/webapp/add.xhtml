@@ -1,0 +1,63 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml"
+   xmlns:f = "http://java.sun.com/jsf/core"
+   xmlns:h = "http://java.sun.com/jsf/html"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+
+
+
+   <h:body>
+      <h2>Gestion des plans de tri</h2>
+      <hr />
+      
+
+      
+      <f:view>
+      	<h:form>
+      	<p:panelGrid border="1" columns="3" cellpadding="2">
+      			<p:outputLabel value="Nom:" />
+      			<p:inputText id="nom" value="#{plansTriManagedBean.newPlan.nom}" required="true" requiredMessage="Nom obligatoire" binding="#{plansTriManagedBean.nomInput}"  >
+					<p:ajax event="blur" listener="#{plansTriManagedBean.checkUniqueNom}" update="nomMsg" />
+      			
+      			
+      			</p:inputText>
+      			<p:message for="nom" id="nomMsg" style="red" />
+      			
+      			
+      			
+      			<p:outputLabel value="Rebut NL:" />
+      			<p:inputText id="nl" value="#{plansTriManagedBean.newPlan.chuteNL}" required="true" requiredMessage="Champs obligatoire"/>
+      			<p:message for="nl" />
+      			<p:outputLabel value="Rebut NA:" />
+      			<p:inputText id="na" value="#{plansTriManagedBean.newPlan.chuteNA}" required="true" requiredMessage="Champs obligatoire"/>
+      			<p:message for="na" />
+      			<p:outputLabel value="Rebut RE:" />
+      			<p:inputText id="re" value="#{plansTriManagedBean.newPlan.chuteRE}" required="true" requiredMessage="Champs obligatoire"/>
+      			<p:message for="re" />
+      			<p:outputLabel value="Type:" />
+				
+				<h:selectOneMenu id="type" value="#{plansTriManagedBean.newPlan.trafic}">
+				<f:selectItem itemValue="ALLER" itemLabel="ALLER"/>
+					<f:selectItem itemValue="RETOUR" itemLabel="RETOUR"/>
+					<f:selectItem itemValue="GEODIS" itemLabel="GEODIS"/>
+				</h:selectOneMenu>
+				
+				
+				
+      			<h:commandButton value="Ajouter" action="#{plansTriManagedBean.createPlan}" />
+      	
+      	</p:panelGrid>
+      	</h:form>
+      </f:view>
+      
+      <br/>
+      
+
+
+   </h:body>
+</html>

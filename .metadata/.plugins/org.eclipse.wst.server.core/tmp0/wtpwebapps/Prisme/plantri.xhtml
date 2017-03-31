@@ -1,0 +1,363 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml"
+   xmlns:f = "http://java.sun.com/jsf/core"
+   xmlns:h = "http://java.sun.com/jsf/html"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+		
+				
+				
+
+	<script src="resources/js/bootstrap.js" type="text/javascript"
+		xml:space="preserve"></script>
+	<link rel="stylesheet" href="resources/css/styles.css" />
+	<link rel="stylesheet" href="resources/css/animate.css" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="icon" href="resources/img/logo_open_wcs.ico"/>
+
+    <title>Prisme | Accueil</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+       <link href="resources/css/navbar.css" rel="stylesheet"/>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="resources/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="resources/css/navbar-fixed-top.css" rel="stylesheet"/>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="resources/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</h:head>
+
+
+   <h:body>
+      
+          <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.xhtml">OpenWCS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+             <li class="active"><a href="#">Utilisateur<span class="sr-only">(current)</span></a></li>
+           
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Aide?</a></li>
+           
+                 <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mon compte <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              
+                <li><a href="#">Mon compte</a></li>
+                <li><a href="#">Déconnexion</a></li>
+          
+              
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+      
+      <div class="container-fluid">
+ 
+  <div class="row">
+    <div class="col-sm-2"  >
+    
+    
+
+    
+    <nav class="navbar navbar-default sidebar" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>      
+    </div>
+    
+          		
+      	<h:graphicImage value="resources/img/logo_open_wcs.png" style="width:200px " />
+      		
+    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="home.xhtml">Accueil<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+<!--         <li class="dropdown"> -->
+<!--           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuarios <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a> -->
+<!--           <ul class="dropdown-menu forAnimate" role="menu"> -->
+<!--             <li><a href="{{URL::to('createusuario')}}">Crear</a></li> -->
+<!--             <li><a href="#">Modificar</a></li> -->
+<!--             <li><a href="#">Reportar</a></li> -->
+<!--             <li class="divider"></li> -->
+<!--             <li><a href="#">Separated link</a></li> -->
+<!--             <li class="divider"></li> -->
+<!--             <li><a href="#">Informes</a></li> -->
+<!--           </ul> -->
+<!--         </li>           -->
+       
+        <li class="active"><a href="plantri.xhtml">Plans de tri<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a></li>        
+        <li ><a href="colis.xhtml">Colis<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-large"></span></a></li>
+        <li ><a href="#">Statistiques<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-stats"></span></a></li>
+             <li ><a href="#">Historiques<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
+             <li ><a href="#">Paramètres<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a></li>
+     
+      </ul>
+    </div>
+  </div>  
+</nav>
+    
+    </div>
+    <div class="col-sm-10" >
+   
+   		   
+	 <div class="container-fluid">
+    
+    
+   
+      <h2>Gestion des plans de tri</h2>
+      <h:outputText value="#{plansTriManagedBean.message}" styleClass="error_message" />
+      <hr />
+      
+      <h:form id="list">
+       
+        <p:growl id="growl" life="2000" />
+     <div align="right">
+     
+         <p:commandButton id="iconOnly"  icon="ui-icon-circle-plus" title="Ajouter" style="align:right" onclick="PF('dlg3').show();"/>
+       
+      </div>   
+  
+      
+        <p:dataTable id="tblPlans" var="plan" value="#{plansTriManagedBean.getPlans()}"  emptyMessage="Aucun plan de tri n'est disponible.">
+        
+        	<p:column headerText="Id" style="width:60px;text-align: center">
+        		<h:outputText value="#{plan.idplantrinoms}" />
+        	</p:column>
+        	 	<p:column headerText="Nom" >
+        		<h:outputText value="#{plan.nom}" />
+        	</p:column>
+        	 	<p:column headerText="Rebut NL" style="text-align: center">
+        		<h:outputText value="#{plan.chuteNL}" />
+        	</p:column>
+        	<p:column headerText="Rebut NA" style="text-align: center">
+        		<h:outputText value="#{plan.chuteNA}" />
+        	</p:column>
+        	<p:column headerText="Rebut RE" style="text-align: center">
+        		<h:outputText value="#{plan.chuteRE}" />
+        	</p:column>
+        	<p:column>
+        			<f:facet name="header">Dernière Modif.</f:facet>
+						<h:outputText value="#{plan.dateModif}">
+						<f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
+	    				</h:outputText>
+        	</p:column>
+        	 	<p:column headerText="Type">
+        		<h:outputText value="#{plan.trafic}" />
+        	</p:column>
+<!--         	<p:column headerText="Controlé"> -->
+<!--         		<h:outputText value="#{plan.trafic}" /> -->
+<!--         	</p:column> -->
+        	<p:column headerText="Actif" style="width:70px;text-align: center">
+        		<h:outputText value="#{plan.actif}" />
+        	</p:column>
+        	
+        	<p:column headerText="Control" style="width:70px;text-align: center">
+        		<h:outputText value="#{plan.controle}" />
+        	</p:column>
+        	<p:column headerText="Édition" style="width:70px;text-align: center">
+        		<h:outputText value="#{plan.edition}" />
+        	</p:column>
+        
+			        <p:column>
+				<f:facet name="header">
+					<h:outputText value="Opérations" />
+				</f:facet>
+					
+		 <p:splitButton value="Règles" action="#{plansTriManagedBean.selectedPlans}"   icon="ui-icon-disk"> 
+        <p:menuitem value="Modifier" action="#{plansTriManagedBean.editPlan}"  icon="ui-icon-pencil" />
+        <p:menuitem value="Dupliquer" action="#{plansTriManagedBean.select}" ajax="false" icon="ui-icon-copy" />
+<!--       <p:menuitem value="ON/OFF" action="#{plansTriManagedBean.activePlan}" ajax="false" icon="ui-icon-close" /> -->
+          <p:menuitem>
+	    <p:commandLink styleClass="ui-menuitem-link" action="#{plansTriManagedBean.activePlan}" ajax="false">
+	    		<h:outputText styleClass="ui-menuitem-icon ui-icon  ui-icon-power" />
+				<h:outputText styleClass="ui-menuitem-text" value="ON/OFF" />
+				<p:confirm header="Attention!" message="Êtes-vous sûr ?" icon="ui-icon-alert" />
+	    </p:commandLink>
+	    </p:menuitem>
+       <p:menuitem value="Contrôler" action="#{plansTriManagedBean.controlPlan}" ajax="false" icon=" ui-icon-arrowrefresh-1-e" />
+<!-- 	    <p:menuitem value="Supprimer" action="#{plansTriManagedBean.deletePlan}" ajax="false" icon="ui-icon-close" /> -->
+	    <p:menuitem>
+	    <p:commandLink styleClass="ui-menuitem-link" action="#{plansTriManagedBean.deletePlan}" ajax="false">
+	    		<h:outputText styleClass="ui-menuitem-icon ui-icon ui-icon-close" />
+				<h:outputText styleClass="ui-menuitem-text" value="Supprimer" />
+				<p:confirm header="Attention!" message="Êtes-vous sûr de vouloir supprimer ce plan de tri?" icon="ui-icon-alert" />
+	    </p:commandLink>
+	    </p:menuitem>
+	    
+	    			  </p:splitButton>
+					
+			</p:column>
+			
+
+        
+        </p:dataTable>
+        
+      <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+        <p:commandButton value="Yes" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+        <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+    </p:confirmDialog>
+        
+  <p:dialog header="Basic Dialog" widgetVar="dlg1" minHeight="40">
+    <h:outputText value="Resistance to PrimeFaces is futile!" />
+</p:dialog>
+        
+<!--      	  <h:commandLink> -->
+<!--        <p:outputLabel value="Export XML" /> -->
+<!--        <p:graphicImage name="img/xml.png" /> -->
+<!--         <p:dataExporter type="xml" target="tblPlans" fileName="planstri" pageOnly="true" /> -->
+<!--     </h:commandLink> -->
+        
+ 
+        
+        
+        
+      </h:form>
+      
+      <h:form>
+                 <p:dialog header="Ajouter plan de tri" widgetVar="dlg3" showEffect="explode" hideEffect="bounce" draggable="true" >
+<!--     <h:outputText value="This dialog has nice effects." /> -->
+
+      	<p:panelGrid border="1" columns="3" cellpadding="2">
+      			<p:outputLabel value="Nom:" />
+      			<p:inputText id="nom" value="#{plansTriManagedBean.newPlan.nom}" required="true" requiredMessage="Nom obligatoire"   >
+					
+      			
+      			
+      			</p:inputText>
+      			<p:message for="nom" id="nomMsg"  />
+      			
+      			
+      			
+      			<p:outputLabel value="Rebut NL:" />
+      			<p:inputText id="nl" value="#{plansTriManagedBean.newPlan.chuteNL}" required="true" requiredMessage="Champs obligatoire"/>
+      			<p:message for="nl" />
+      			<p:outputLabel value="Rebut NA:" />
+      			<p:inputText id="na" value="#{plansTriManagedBean.newPlan.chuteNA}" required="true" requiredMessage="Champs obligatoire"/>
+      			<p:message for="na" />
+      			<p:outputLabel value="Rebut RE:" />
+      			<p:inputText id="re" value="#{plansTriManagedBean.newPlan.chuteRE}" required="true" requiredMessage="Champs obligatoire"/>
+      			<p:message for="re" />
+      			<p:outputLabel value="Type:" />
+				
+				<h:selectOneMenu id="type" value="#{plansTriManagedBean.newPlan.trafic}">
+				<f:selectItem itemValue="ALLER" itemLabel="ALLER"/>
+					<f:selectItem itemValue="RETOUR" itemLabel="RETOUR"/>
+					<f:selectItem itemValue="GEODIS" itemLabel="GEODIS"/>
+				</h:selectOneMenu>
+				
+				
+				
+      			<p:commandButton value="Ajouter" action="#{plansTriManagedBean.createPlan}" onclick="PF('dlg3').hide();" ajax="false" />
+      	
+      	</p:panelGrid>
+
+</p:dialog>
+      </h:form>
+      
+      
+<!--  <hr /> -->
+<!--        <h3>Ajouter</h3> -->
+<!-- 			<h:form id="ajouter"> -->
+			
+
+<!--       	</h:form> -->
+      	
+      	 <hr />
+       <h3>Dupliquer</h3> <p:outputLabel value="#{plansTriManagedBean.selectedPlan.nom}"/>
+       
+      	<h:form>
+      			<p:panelGrid border="1" columns="3" cellpadding="2">
+      			<p:outputLabel value="Nouveau nom:" />
+      			<p:inputText id="nom" value="#{plansTriManagedBean.newNom}" required="true" requiredMessage="Nom obligatoire"   >
+					
+      				
+      			
+      			</p:inputText>
+      			
+      			</p:panelGrid> 
+      			<p:commandButton value="Valider" action="#{plansTriManagedBean.duplicate}" ajax="false"/>
+      			
+      	</h:form>
+<!--  <hr /> -->
+<!-- <h3>Détails</h3> -->
+
+
+<!--       <h:outputText value="Détails plan: #{plansTriManagedBean.selectedPlan.nom}" /> -->
+      
+<!--       <h:form> -->
+        
+
+   
+      
+     
+        
+<!--       </h:form> -->
+      
+</div>
+   
+   
+   </div> 
+    
+ </div>
+ 
+ 
+ 
+</div>
+	
+      
+
+
+   </h:body>
+</html>
